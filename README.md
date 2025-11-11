@@ -1,5 +1,5 @@
 # Anonymous Repository for ACM SenSys 2026 Submission
-# mmWave-Radar Point Clouds Human Pose Dataset
+# CDPose: A Large-Scale Millimeter-Wave Radar Dataset for 3D Human Pose Estimation
 
 This repository contains the **anonymized dataset, and source code** for our submission to *ACM SenSys 2026*.  
 All materials are provided **solely for double-blind review** and will be publicly released after acceptance.
@@ -9,6 +9,15 @@ All materials are provided **solely for double-blind review** and will be public
 ## 1. Overview
 
 This dataset supports research in **3D human pose reconstruction** from **millimeter-wave radar point clouds**. It provides high-resolution, time-aligned ground-truth **3D joint annotations** using a synchronized **motion capture system**.
+
+#### Deployment Demonstration Video
+
+<div align="center">
+<video src="video_demo/unity_demo.mp4" width="80%" controls muted loop></video><br/>
+<sub><b>Demo:</b> Real-time inference on NVIDIA Jetson Orin Nano using TensorRT optimization. The visualization is based on 23 keypoints estimated by PointNet++, which are further reconstructed and rendered in Unity 3D for better visual presentation.</sub>
+</div>
+
+Note that due to differences in coordinate system conventions, the radar point clouds appear as a mirror reflection relative to the image and keypoint results.
 
 **Summary (current subset):**
 - **Subjects:** 29 participants
@@ -217,12 +226,6 @@ These metrics highlight the platform’s suitability for **always-on sensing** a
 
 ---
 
-#### Deployment Demonstration Video
-
-<div align="center">
-<video src="video_demo/unity_demo.mp4" width="80%" controls muted loop></video><br/>
-<sub><b>Demo:</b> Real-time PointNet++ inference on NVIDIA Jetson Orin Nano using TensorRT optimization.</sub>
-</div>
 
 ## 5. Citation
 To preserve anonymity, the citation will be added after acceptance.
