@@ -1,0 +1,8 @@
+# Core scientific stack
+numpy>=1.24
+
+# PyTorch (CPU-only or GPU version; pick one)
+torch>=2.1
+
+# Optional: progress bars, useful for DataLoader loops
+tqdm>=4.66
