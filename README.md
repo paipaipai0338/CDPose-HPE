@@ -22,7 +22,18 @@ This dataset supports research in **3D human pose reconstruction** from **millim
 ---
 
 ## 2. Repository Structure
+The repository is organized as follows:
 
+
+**Notes**
+**Notes**
+- `CDPose/` contains the released dataset, including synchronized radar and IMU data along with visualization results.  
+  - `IMU/` provides 3D human joint annotations obtained from inertial sensors.  
+  - `Radar/` includes the corresponding radar point-cloud sequences.  
+  - `GIF/` stores visualization results generated from the radar–IMU fusion outputs for qualitative inspection.  
+- `pic/` contains static figures referenced in the Markdown documentation.  
+- `src/` includes core source code modules.  
+- `video_demo/` holds the Unity 3D deployment videos that illustrate real-time inference and cross-scene generalization performance.
 
 
 ---
