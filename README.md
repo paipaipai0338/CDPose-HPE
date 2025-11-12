@@ -217,11 +217,17 @@ These metrics highlight the platform’s suitability for **always-on sensing** a
 
 #### Deployment Demonstration Video
 
-<div align="center">
-  <video src="video_demo/unity_demo.mp4"
-         width="80%" controls muted loop playsinline></video><br/>
-  <sub><b>Demo:</b> Real-time inference on NVIDIA Jetson Orin Nano using TensorRT optimization. The visualization is based on 23 keypoints estimated by PointNet++, which are further reconstructed and rendered in Unity 3D for better visual presentation.</sub>
-</div>
+<td align="center" valign="top" style="padding:6px; text-align:center;">
+  <img src="video_demo/unity_demo.gif"
+       alt="throw punches"
+       width="480"
+       style="display:block; margin:auto;" />
+  <br/>
+  <sub><b>(p)</b> Real-time inference on NVIDIA Jetson Orin Nano using TensorRT optimization. 
+  The visualization is based on 23 keypoints estimated by PointNet++, which are further 
+  reconstructed and rendered in Unity 3D for better visual presentation.</sub>
+</td>
+
 
 Note that due to differences in coordinate system conventions, the radar point clouds appear as a mirror reflection relative to the image and keypoint results.
 
