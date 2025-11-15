@@ -203,28 +203,21 @@ The following image shows the embedded inference platform used in our experiment
 
 <div align="center"> <table> <tr> <td align="center"> <img src="pic/nano.jpg" height="300px" /><br/> NVIDIA Jetson Nano Development Board </td> </tr> </table> </div>
 
-#### On-Device Performance Summary
+### On-Device Performance Summary
 
 <div align="center">
 
-| **Metric** | **Value** |
-|:-----------:|:---------:|
-| **Model Inference Time*** | **6 ms** |
-| **System Power Consumption** | **6.4 W** |
-| **GPU Usage** | **15%** |
-| **CPU Usage (6-core Avg)** | **28.8%** |
-| **RAM Usage** | **52.6%** |
+| **Model** | **Latency*** (ms) | **Power** (W) | **GPU Usage** (%) | **CPU Usage** (%) | **RAM Usage** (%) |
+|:---------:|:-----------------:|:--------------:|:------------------:|:------------------:|:------------------:|
+| **PointNet++** | 35.84 | 7.2 | 60.6 | 37.2 | 64.3 |
+| **DGCNN** | 1.57 | 9.3 | 92.1 | 35.4 | 62.1 |
+| **RepSurf** | 25.7 | 11.3 | 99.3 | 43.8 | 74.2 |
 
 </div>
 
-<sub>*Average per-frame inference time measured over 1000 frames.</sub>
+<sub>*Average per-frame latency measured over 1000 continuous inferences. Power and utilization values are averaged from real-time `tegrastats` logs.</sub>
 
-The results demonstrate **exceptional runtime efficiency**.
-The model achieves an **average inference time of only 6 ms per frame**, confirming its capability for **real-time radar sensing** — the computation delay is negligible compared to the data acquisition rate.
-
-Moreover, this high-speed inference operates within a **minimal power budget**:
-the system consumes only **6.4 W total**, with moderate utilization of computational resources (15% GPU, 28.8% CPU).
-These metrics highlight the platform’s suitability for **always-on sensing** and **continuous monitoring applications**.
+Across all tested models, the Orin Nano maintains **reasonable power consumption (7.2–11.3 W)**, making it well-suited for **continuous monitoring**, **edge intelligence**, and **always-on sensing applications**.
 
 #### Deployment Demonstration Video
 
